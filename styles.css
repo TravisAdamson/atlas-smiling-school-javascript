@@ -17,8 +17,6 @@
   --faq-pad-outer: 7vw;
 }
 
-/* General Styles  */
-
 .body {
   font-family: var(--font-family-1);
 }
@@ -40,8 +38,6 @@
   opacity: var(--opacity-value);
 }
 
-/* Header / Hero Styles */
-
 .header {
   background-image: url("images/pic_1.jpg");
   background-color: var(--background-color);
@@ -50,7 +46,6 @@
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
 }
 
 .header .navbar-line1 {
@@ -90,10 +85,6 @@
   position: relative;
   transition: 180ms;
 }
-
-/* .header .nav-link:hover:after {
-  width: 100%;
-} */
 
 .pricing-header .navbar-nav li:nth-child(2) a {
   color: var(--main-color) !important;
@@ -165,6 +156,26 @@
   padding-bottom: 98px;
 }
 
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  display: none; 
+}
+
+.quote-text {
+  color: var(--color-white);
+  }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media screen and (max-width: 767px) {
   .pro1,
   .pro2 {
@@ -185,8 +196,6 @@
     width: 0%;
   }
 }
-
-/* Quotes Section  */
 
 .quotes {
   height: 392px;
@@ -218,8 +227,18 @@
   font-size: 22px;
 }
 .quote-text span {
-  font-style: italic;
+  font-style: italic !important;
   font-size: 22px;
+}
+
+.quote-item {
+  display: flex;
+  align-items: center;
+}
+
+.quote-image {
+  float: left;
+  margin-right: 20px;
 }
 
 .carousel-control-prev img,
@@ -282,8 +301,6 @@
   }
 }
 
-/* POPULAR SECTION  */
-
 .popular {
   height: auto;
   background-color: var(--color-white);
@@ -305,7 +322,7 @@
 }
 
 .section .card-img-overlay {
-  /* top: 25px; */
+  top: 25px;
   top: 5%;
 }
 .section .card-title {
@@ -346,7 +363,6 @@
     --popular-arrows-x: -3vw;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 4%;
   }
   .section .card-img-overlay img {
@@ -366,7 +382,7 @@
     width: 30%;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
+    top: 25px;
     top: 5%;
   }
 }
@@ -388,12 +404,9 @@
     width: 30%;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 5%;
   }
 }
-
-/* SMILES Section  */
 
 .smiles {
   height: auto;
@@ -466,8 +479,6 @@
   }
 }
 
-/* Footer  */
-
 .footer {
   background-color: var(--background-color);
   height: 249px;
@@ -529,16 +540,6 @@
   }
 }
 
-/* ==============================================================
-==============================================================
-============================================================== */
-/* PRICING  */
-/* ==============================================================
-==============================================================
-============================================================== */
-
-/* HEADER SECTION */
-
 .pricing-header {
   background-image: url(images/pic_2.jpg);
 }
@@ -572,8 +573,6 @@
     width: 150px;
   }
 }
-
-/* PRICING GRID  */
 
 .prices-grid {
   padding-bottom: 38px;
@@ -654,8 +653,6 @@
   }
 }
 
-/* FAQ SECTION  */
-
 .faq .section-header h2 {
   margin-top: 74px;
   font-size: 60px;
@@ -720,17 +717,6 @@
   }
 }
 
-/* ==============================================================
-==============================================================
-============================================================== */
-/* COURSES  */
-
-/* ==============================================================
-==============================================================
-============================================================== */
-
-/* Header Section  */
-
 .courses-header {
   background-image: url(images/pic_3.jpg);
   background-size: cover;
@@ -754,8 +740,6 @@
     background-position-y: -100px;
   }
 }
-
-/* SEARCH SECTION  */
 
 .search {
   background-color: var(--main-color);
@@ -860,7 +844,6 @@
   }
 }
 
-/* RESULTS SECTION  */
 .results .section-title {
   font-size: 16px;
   line-height: 20px;
