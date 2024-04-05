@@ -14,6 +14,7 @@ fetch('https://smileschool-api.hbtn.info/popular-tutorials')
     $('#popular-card').slick({
       slidesToShow: 4, 
       slidesToScroll: 1,
+      infinity: false,
       responsive: [
         {
           breakpoint: 768,

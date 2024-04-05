@@ -102,6 +102,7 @@ function showLoader() {
       slidesToScroll: 1,
       prevArrow: $(".prev1"),
       nextArrow: $(".next1"),
+      infinity: false,
       responsive: [
         {
           breakpoint: 768,
@@ -153,6 +154,7 @@ function showLoader() {
       slidesToScroll: 1,
       prevArrow: $(".prev2"),
       nextArrow: $(".next2"),
+      infinity: false,
       responsive: [
         {
           breakpoint: 768,
